@@ -1,4 +1,4 @@
-package clase15v9;
+package clase15v9Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -63,6 +63,6 @@ public class AgendaTest {
 		res.agregarNombre("Nagao");
 		res.agregarNombre("Nobbu");
 		res.agregarNombre("Nyck");
-		assertEquals(res, agenda.filter("N"));
+		assertEquals(res.getNombres(), agenda.filter("N"));
 	}
 }
